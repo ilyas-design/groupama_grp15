@@ -118,7 +118,7 @@ La clé reste côté serveur (`app/api/chat/route.ts`). En cas d'indisponibilit�
 
 ## Déploiement
 
-Le projet est prêt pour [Vercel](https://vercel.com/) : importez le dépôt, aucun réglage supplémentaire n'est nécessaire. Chaque push sur `main` déclenche un nouveau déploiement.
+Le site est déployé sur [Vercel](https://vercel.com/) : **https://groupama-grp15.vercel.app**. Chaque push sur `main` déclenche un nouveau déploiement.
 
 ## Équipe
 

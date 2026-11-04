@@ -4,7 +4,7 @@ export const site = {
   name: 'Cultiver l’IA',
   brand: 'Groupama × Groupe 15',
   brandSub: 'Cultiver l’IA',
-  url: 'https://groupama-cultiver-ia.vercel.app',
+  url: 'https://groupama-grp15.vercel.app',
   description:
     'L’IA et le numérique au service des métiers, des compétences et des sociétaires de Groupama. Comme l’eau nourrit la terre, cultivons l’intelligence.',
   logoAlt: 'Logo Groupama × Groupe 15 : un G vert et bleu avec une feuille, une goutte d’eau et une vague',
