@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --green-900: #0f3a2a;
+  --green-700: #1b7e4d;
+  --green-500: #2c9e65;
+  --leaf: #57b54d;
+  --teal: #15968d;
+  --blue-700: #1a78aa;
+  --water: #2da9da;
+  --water-lt: #e3f8ff;
+  --leaf-lt: #e2f7e5;
+  --sand: #f7f2ea;
+  --sand-2: #efe6d8;
+  --earth: #b8925f;
+  --coral: #f2785c;
+  --ink: #12291f;
+  --ink-2: #4a5c53;
+  --line: #e3ded3;
+  --signature: linear-gradient(135deg, #2c9e65 0%, #15968d 50%, #1a78aa 100%);
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-sand font-sans text-ink antialiased; line-height: 1.55; }
+  h1, h2, h3 { letter-spacing: -0.02em; line-height: 1.08; }
+  :focus-visible { outline: 3px solid var(--water); outline-offset: 3px; border-radius: 6px; }
+  /* Évite qu'un enfant de grille (onglets, tableau défilant) élargisse la page */
+  .grid > * { min-width: 0; }
+  ::selection { background: var(--leaf-lt); color: var(--green-900); }
+}
+
+@layer components {
+  .h1 { @apply font-serif font-semibold text-[2.5rem] leading-[1.05] sm:text-5xl lg:text-[4.25rem]; }
+  .h2 { @apply font-serif font-semibold text-3xl sm:text-4xl lg:text-[2.75rem]; }
+  .h3 { @apply text-xl font-extrabold; }
+  .lead { @apply max-w-2xl text-lg text-ink-2 sm:text-[1.1875rem]; }
+  .section { @apply px-4 py-16 sm:px-6 lg:px-12 lg:py-[88px]; }
+}
+
+/* Eau qui circule : à poser sur un <path> SVG avec stroke */
+.flow-dash { stroke-dasharray: 8 10; animation: flow 2.4s linear infinite; }
+@keyframes flow { to { stroke-dashoffset: -72; } }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

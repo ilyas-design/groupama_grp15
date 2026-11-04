@@ -1,0 +1,19 @@
+node_modules
+.next
+out
+next-env.d.ts
+*.tsbuildinfo
+.env*.local
+
+# Fichiers de travail (non nécessaires au site)
+.env
+image.png
+maquettes-groupama-ia.html
+MASTER_PROMPT.md
+CONTRACT.md
+DECISIONS.md
+QA_REPORT.md
+Texts/
+reference/
+screenshots/
+.vercel
