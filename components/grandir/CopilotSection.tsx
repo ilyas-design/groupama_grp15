@@ -11,7 +11,7 @@ export function CopilotSection() {
         {copilots.map((c, i) => (
           <Reveal as="li" key={c.id} delay={i * 0.08} className="flex">
             <Card padding="none" interactive className="flex w-full flex-col overflow-hidden">
-              <PhotoPlaceholder caption={c.photo.caption} tone={c.photo.tone} heightClass="min-h-[160px]" className="!rounded-none" />
+              <PhotoPlaceholder caption={c.photo.caption} src={c.photo.src} tone={c.photo.tone} heightClass="min-h-[160px]" className="!rounded-none" />
               <div className="flex flex-1 flex-col gap-4 p-6 sm:p-7">
                 <Tag tone={c.tag.tone} icon={c.icon} className="w-fit">
                   {c.tag.label}

@@ -24,11 +24,7 @@ export function Counter({ value, prefix = '', suffix = '', duration = 1.8, decim
   const [n, setN] = useState(0);
 
   useEffect(() => {
-    if (!inView) return;
-    if (reduce) {
-      setN(value);
-      return;
-    }
+    if (!inView || reduce) return;
     const ctrl = animate(0, value, { duration, ease: [0.22, 1, 0.36, 1], onUpdate: setN });
     return () => ctrl.stop();
   }, [inView, reduce, value, duration]);
@@ -37,7 +33,7 @@ export function Counter({ value, prefix = '', suffix = '', duration = 1.8, decim
     <span ref={ref} className={className}>
       <span aria-hidden>
         {prefix}
-        {fmt(n, decimals)}
+        {fmt(reduce ? value : n, decimals)}
         {suffix}
       </span>
       <span className="sr-only">

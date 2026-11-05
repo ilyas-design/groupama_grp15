@@ -6,7 +6,7 @@
 
 *Comme l'eau nourrit la terre, cultivons l'intelligence et faisons grandir les talents de demain.*
 
-![Next.js](https://img.shields.io/badge/Next.js-14-000000?logo=nextdotjs)
+![Next.js](https://img.shields.io/badge/Next.js-16-000000?logo=nextdotjs)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?logo=tailwindcss&logoColor=white)
 ![Framer Motion](https://img.shields.io/badge/Framer_Motion-11-0055FF?logo=framer&logoColor=white)
@@ -50,7 +50,8 @@ Un assistant conversationnel, **« Le Jardinier IA »**, est accessible depuis t
 
 ## Stack technique
 
-- [Next.js 14](https://nextjs.org/) — App Router, Server Components
+- [Next.js 16](https://nextjs.org/) — App Router, Server Components, Turbopack
+- [React 19](https://react.dev/)
 - [TypeScript](https://www.typescriptlang.org/) en mode strict
 - [Tailwind CSS](https://tailwindcss.com/) — design tokens issus du logo
 - [Framer Motion](https://www.framer.com/motion/) — animations
@@ -58,7 +59,7 @@ Un assistant conversationnel, **« Le Jardinier IA »**, est accessible depuis t
 
 ## Démarrage
 
-**Prérequis** : Node.js 18.18 ou supérieur.
+**Prérequis** : Node.js 20.9 ou supérieur.
 
 ```bash
 git clone https://github.com/ilyas-design/groupama_grp15.git

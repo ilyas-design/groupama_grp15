@@ -71,7 +71,6 @@ export function SynthesisResult({ content }: { content: SynthesisContent }) {
                 value={draft}
                 onChange={(e) => setDraft(e.target.value)}
                 rows={4}
-                // eslint-disable-next-line jsx-a11y/no-autofocus
                 autoFocus
                 className="w-full rounded-[12px] border border-line bg-sand p-3 text-sm text-ink focus:border-water-dk"
               />

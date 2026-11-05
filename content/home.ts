@@ -37,6 +37,7 @@ export interface TalentBranch {
 
 export interface HomeTestimonial extends Testimonial {
   photo: string;
+  photoSrc?: string;
   tone: Tone;
 }
 
@@ -182,17 +183,17 @@ export const testimonials: HomeTestimonial[] = [
   {
     quote: 'Le copilote prépare mes rendez-vous. Je passe enfin plus de temps à écouter.',
     name: 'Sophie L.', role: 'Conseillère · Agence de Rennes', initials: 'SL',
-    photo: 'Conseillère en agence avec un sociétaire', tone: 'green',
+    photo: 'Conseillère en agence avec un sociétaire', photoSrc: '/photos/home-sophie.webp', tone: 'green',
   },
   {
     quote: 'Après la grêle, l’IA a pré-trié 600 dossiers en une nuit. On a pu appeler chaque agriculteur.',
     name: 'Marc B.', role: 'Gestionnaire sinistre · Centre-Manche', initials: 'MB',
-    photo: 'Gestionnaire sinistre sur le terrain', tone: 'earth',
+    photo: 'Gestionnaire sinistre sur le terrain', photoSrc: '/photos/home-marc.webp', tone: 'earth',
   },
   {
     quote: 'Au Lab IA, j’ai testé, raté, recommencé. Mon passeport est passé au niveau Arbre.',
     name: 'Karim A.', role: 'Commercial · Agence Lyon Sud', initials: 'KA',
-    photo: 'Atelier Lab IA en équipe', tone: 'water',
+    photo: 'Atelier Lab IA en équipe', photoSrc: '/photos/home-karim.webp', tone: 'water',
   },
 ];
 

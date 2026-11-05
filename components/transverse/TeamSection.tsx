@@ -12,7 +12,20 @@ export function TeamSection({ team }: { team: TeamContent }) {
         <div>
           <SectionHeader id={headingId} eyebrow={team.eyebrow} title={team.title} lead={team.lead} className="!mb-8" />
           <Reveal>
-            <PhotoPlaceholder caption={team.photo.caption} tone={team.photo.tone} overlay="roots" heightClass="min-h-[260px] sm:min-h-[340px]" />
+            <PhotoPlaceholder caption={team.photo.caption} src={team.photo.src} tone={team.photo.tone} overlay="roots" heightClass="min-h-[260px] sm:min-h-[340px]" />
+            <p id={`${team.id}-noms`} className="mb-2.5 mt-5 text-xs font-extrabold uppercase tracking-[0.08em] text-ink-2">
+              {team.namesTitle}
+            </p>
+            <ul aria-labelledby={`${team.id}-noms`} className="flex flex-wrap gap-1.5">
+              <li className="rounded-full border border-green-700 bg-leaf-lt px-3 py-1 text-sm font-bold text-green-800">
+                {team.facilitator.name} <span className="font-semibold">· {team.facilitator.role}</span>
+              </li>
+              {team.names.map((n, i) => (
+                <li key={`${n}-${i}`} className="rounded-full border border-line bg-sand px-3 py-1 text-sm font-semibold text-ink">
+                  {n}
+                </li>
+              ))}
+            </ul>
           </Reveal>
         </div>
 

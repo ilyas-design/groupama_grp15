@@ -23,7 +23,7 @@ export default function AboutPage() {
         lead={hero.lead}
         ctas={hero.ctas}
         theme="roots"
-        aside={<PhotoPlaceholder caption={hero.photo.caption} tone={hero.photo.tone} overlay="roots" heightClass="min-h-[280px] lg:min-h-[400px]" className="rounded-xl3" />}
+        aside={<PhotoPlaceholder caption={hero.photo.caption} src={hero.photo.src} tone={hero.photo.tone} overlay="roots" heightClass="min-h-[280px] lg:min-h-[400px]" className="rounded-xl3" />}
       />
 
       <Section id={timeline.id} bg="sand" narrow aria-labelledby="histoire-titre">

@@ -90,7 +90,7 @@ export const relierHero: {
     { label: 'Lire le mode d’emploi', href: '#guide', icon: 'BookOpen' },
     { label: 'Trouver le juste milieu', href: '#juste-milieu', variant: 'secondary', icon: 'Scale' },
   ],
-  photo: { caption: 'Conseillère en agence en face à face avec un sociétaire', tone: 'earth' },
+  photo: { caption: 'Conseillère en agence en face à face avec un sociétaire', src: '/photos/relier-hero.webp', tone: 'earth' },
   chips: [
     { label: 'Écoute', icon: 'HandHeart', tone: 'leaf' },
     { label: 'Face à face', icon: 'Users', tone: 'earth' },
@@ -398,7 +398,7 @@ export const faqHeader: SectionHeaderContent = {
   lead: 'Et pour tout le reste, le Jardinier IA vous répond en bas à droite.',
 };
 
-export const faqPhoto: Photo = { caption: 'Conseiller et agricultrice échangeant dans un champ', tone: 'green' };
+export const faqPhoto: Photo = { caption: 'Conseiller et agricultrice échangeant dans un champ', src: '/photos/relier-faq.webp', tone: 'green' };
 
 export const faqItems: FaqItem[] = [
   {

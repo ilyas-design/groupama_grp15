@@ -45,6 +45,7 @@ export function CommunitySection() {
             <LabAgenda />
             <PhotoPlaceholder
               caption={labSection.photo.caption}
+              src={labSection.photo.src}
               tone={labSection.photo.tone}
               overlay="roots"
               heightClass="min-h-[140px]"

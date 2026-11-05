@@ -15,7 +15,6 @@ function AnimatedHours({ value }: { value: number }) {
 
   useEffect(() => {
     if (reduce) {
-      setN(value);
       from.current = value;
       return;
     }
@@ -24,7 +23,7 @@ function AnimatedHours({ value }: { value: number }) {
     return () => ctrl.stop();
   }, [value, reduce]);
 
-  return <>{fmt(n)}</>;
+  return <>{fmt(reduce ? value : n)}</>;
 }
 
 /** Simulateur « Ce que l'IA change pour mon métier » : profil → heures libérées + barres par tâche. */

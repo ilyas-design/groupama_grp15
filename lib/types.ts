@@ -71,6 +71,8 @@ export interface Photo {
   /** Description de la photo attendue (sert de légende ET d'alt) */
   caption: string;
   tone?: Tone;
+  /** Chemin dans /public (ex. « /photos/home-sophie.webp ») */
+  src?: string;
 }
 
 export interface FooterColumn {

@@ -29,7 +29,7 @@ export const viewport: Viewport = { themeColor: '#1B7E4D' };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="fr" className={`${fraunces.variable} ${manrope.variable}`}>
+    <html lang="fr" className={`${fraunces.variable} ${manrope.variable}`} data-scroll-behavior="smooth">
       <body>
         <Providers>
           <Nav />

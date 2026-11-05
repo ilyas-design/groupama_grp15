@@ -7,6 +7,7 @@ export { Counter } from './Counter';
 export { Eyebrow } from './Eyebrow';
 export { Icon, iconRegistry, type IconName } from './Icon';
 export { IconBox } from './IconBox';
+export { LoopVideo } from './LoopVideo';
 export { PhotoPlaceholder } from './PhotoPlaceholder';
 export { ProgressBar } from './ProgressBar';
 export { Reveal } from './Reveal';

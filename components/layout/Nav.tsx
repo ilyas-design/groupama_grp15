@@ -14,8 +14,13 @@ const isActive = (path: string, href: string) => (href === '/' ? path === '/' : 
 export function Nav() {
   const path = usePathname() ?? '/';
   const [open, setOpen] = useState(false);
+  const [openedOn, setOpenedOn] = useState(path);
 
-  useEffect(() => setOpen(false), [path]);
+  // Changement de page : on referme le menu (ajustement pendant le rendu, sans effet)
+  if (path !== openedOn) {
+    setOpenedOn(path);
+    setOpen(false);
+  }
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setOpen(false);

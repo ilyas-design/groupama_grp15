@@ -140,7 +140,7 @@ export const copilots: Copilot[] = [
     role: 'Conseiller terrain',
     tag: { label: 'Métier terrain', tone: 'leaf' },
     icon: 'Compass',
-    photo: { caption: 'Conseiller sur le terrain avec un sociétaire agriculteur', tone: 'green' },
+    photo: { caption: 'Conseiller sur le terrain avec un sociétaire agriculteur', src: '/photos/metier-terrain.webp', tone: 'green' },
     summary: 'Arrive en rendez-vous avec l’essentiel en tête.',
     missions: [
       'Prépare les rendez-vous',
@@ -154,7 +154,7 @@ export const copilots: Copilot[] = [
     role: 'Commercial en agence',
     tag: { label: 'Agence', tone: 'earth' },
     icon: 'Briefcase',
-    photo: { caption: 'Commerciale en agence accueillant un jeune couple', tone: 'earth' },
+    photo: { caption: 'Commerciale en agence accueillant un jeune couple', src: '/photos/metier-agence.webp', tone: 'earth' },
     summary: 'Gagne du temps sur l’écrit, en garde pour l’écoute.',
     missions: [
       'Rédige les propositions',
@@ -168,7 +168,7 @@ export const copilots: Copilot[] = [
     role: 'Gestionnaire sinistre',
     tag: { label: 'Gestion', tone: 'water' },
     icon: 'FileSearch',
-    photo: { caption: 'Gestionnaire sinistre étudiant un dossier à son bureau', tone: 'water' },
+    photo: { caption: 'Gestionnaire sinistre étudiant un dossier à son bureau', src: '/photos/metier-sinistre.webp', tone: 'water' },
     summary: 'Traite plus vite les dossiers simples, mieux les complexes.',
     missions: [
       'Pré-trie les dossiers',
@@ -182,7 +182,7 @@ export const copilots: Copilot[] = [
     role: 'Ressources humaines',
     tag: { label: 'RH', tone: 'coral' },
     icon: 'Users',
-    photo: { caption: 'Chargée RH en entretien de développement avec un collaborateur', tone: 'coral' },
+    photo: { caption: 'Chargée RH en entretien de développement avec un collaborateur', src: '/photos/metier-rh.webp', tone: 'coral' },
     summary: 'Prépare les entretiens, garde du temps pour l’échange.',
     missions: [
       'Prépare les entretiens annuels',
@@ -196,7 +196,7 @@ export const copilots: Copilot[] = [
     role: 'Manager d’équipe',
     tag: { label: 'Management', tone: 'teal' },
     icon: 'Target',
-    photo: { caption: 'Manageuse animant un point d’équipe autour d’un tableau', tone: 'teal' },
+    photo: { caption: 'Manageuse animant un point d’équipe autour d’un tableau', src: '/photos/metier-manager.webp', tone: 'teal' },
     summary: 'Pilote l’activité sans se noyer dans les tableaux.',
     missions: [
       'Synthétise l’activité de l’équipe',
@@ -301,7 +301,7 @@ export const labSection = {
   full: 'Complet',
   announceRegistered: 'Inscription confirmée :',
   announceCancelled: 'Inscription annulée :',
-  photo: { caption: 'Équipe en atelier au Lab IA', tone: 'coral' } as Photo,
+  photo: { caption: 'Équipe en atelier au Lab IA', src: '/photos/lab-atelier.webp', tone: 'coral' } as Photo,
 };
 
 export const labEvents: LabEvent[] = [

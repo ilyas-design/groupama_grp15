@@ -8,7 +8,7 @@ export function RelierFaq() {
       <div className="grid items-start gap-10 lg:grid-cols-2 lg:gap-14">
         <div>
           <SectionHeader id="faq-titre" {...faqHeader} className="!mb-0" />
-          <PhotoPlaceholder caption={faqPhoto.caption} tone={faqPhoto.tone} overlay="roots" heightClass="min-h-[240px]" className="mt-8 hidden sm:flex" />
+          <PhotoPlaceholder caption={faqPhoto.caption} src={faqPhoto.src} tone={faqPhoto.tone} overlay="roots" heightClass="min-h-[240px]" className="mt-8 hidden sm:flex" />
         </div>
         <Accordion
           defaultOpen={[faqItems[0].id]}

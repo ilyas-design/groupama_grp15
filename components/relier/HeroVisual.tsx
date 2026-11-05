@@ -6,7 +6,7 @@ export function HeroVisual() {
   const { photo, chips } = relierHero;
   return (
     <div className="relative">
-      <PhotoPlaceholder caption={photo.caption} tone={photo.tone} overlay="roots" heightClass="min-h-[260px] sm:min-h-[320px]" className="rounded-xl3 shadow-soft" />
+      <PhotoPlaceholder caption={photo.caption} src={photo.src} tone={photo.tone} overlay="roots" heightClass="min-h-[260px] sm:min-h-[320px]" className="rounded-xl3 shadow-soft" />
       <AnimatedRoots className="-mt-6 h-28 sm:h-36" color="var(--earth)" />
       <ul className="absolute right-3 top-3 flex flex-col items-end gap-2 sm:right-4 sm:top-4">
         {chips.map((c, i) => (

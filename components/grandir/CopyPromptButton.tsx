@@ -9,7 +9,7 @@ type Status = 'idle' | 'copied' | 'error';
 /** Copie un prompt dans le presse-papiers, avec retour visuel et annonce vocale. */
 export function CopyPromptButton({ text }: { text: string }) {
   const [status, setStatus] = useState<Status>('idle');
-  const timer = useRef<ReturnType<typeof setTimeout>>();
+  const timer = useRef<ReturnType<typeof setTimeout>>(undefined);
 
   useEffect(() => () => clearTimeout(timer.current), []);
 

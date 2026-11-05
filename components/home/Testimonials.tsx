@@ -16,7 +16,7 @@ export function Testimonials() {
       <ul className="grid gap-5 md:grid-cols-3">
         {testimonials.map((t, i) => (
           <Reveal as="li" key={t.name} delay={i * 0.1} className="flex flex-col gap-[18px] rounded-card border border-line bg-white p-6 sm:p-7">
-            <PhotoPlaceholder caption={t.photo} tone={t.tone} heightClass="min-h-[160px]" />
+            <PhotoPlaceholder caption={t.photo} src={t.photoSrc} tone={t.tone} heightClass="min-h-[160px]" />
             <figure className="flex flex-1 flex-col gap-[18px]">
               <blockquote className="flex-1 font-serif text-xl leading-snug">
                 <Icon name="Quote" className="mb-2 h-5 w-5 text-green-700" />

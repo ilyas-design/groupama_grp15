@@ -44,6 +44,41 @@
 .flow-dash { stroke-dasharray: 8 10; animation: flow 2.4s linear infinite; }
 @keyframes flow { to { stroke-dashoffset: -72; } }
 
+/* Arbre du hero d'accueil (HeroArt) — coordonnées dans le viewBox 500×510 */
+.ha-sway { transform-origin: 250px 268px; animation: ha-sway 8s ease-in-out infinite; }
+.ha-rustle, .ha-rustle-slow, .ha-rustle-fast { transform-box: fill-box; transform-origin: 50% 100%; animation: ha-rustle 5s ease-in-out infinite; }
+.ha-rustle-slow { animation-duration: 7s; animation-delay: -2s; }
+.ha-rustle-fast { animation-duration: 3.8s; animation-delay: -1s; }
+.ha-grass { transform-box: fill-box; transform-origin: 50% 100%; animation: ha-grass 3.2s ease-in-out infinite alternate; }
+.ha-grass-alt { animation-duration: 2.6s; animation-delay: -1.3s; }
+.ha-leaf-fall { transform-box: fill-box; transform-origin: center; opacity: 0; animation: ha-leaf-fall 11s ease-in infinite; }
+.ha-cloud { animation: ha-cloud 28s ease-in-out infinite alternate; }
+.ha-birds { animation: ha-birds 32s linear infinite; }
+.ha-rays { opacity: 0.1; animation: ha-rays 9s ease-in-out infinite; }
+.ha-wave { animation: ha-wave 10s linear infinite; }
+.ha-wave-slow { animation-duration: 16s; animation-direction: reverse; }
+.ha-ping { transform-box: fill-box; transform-origin: center; animation: ha-ping 2.8s ease-out infinite; }
+.ha-twinkle { opacity: 0; animation: ha-twinkle 3.6s ease-in-out infinite; }
+@keyframes ha-sway { 0%, 100% { transform: rotate(-0.6deg); } 50% { transform: rotate(0.7deg); } }
+@keyframes ha-rustle { 0%, 100% { transform: translate(0, 0) rotate(0); } 33% { transform: translate(1.5px, -0.6px) rotate(0.5deg); } 66% { transform: translate(-1px, 0.4px) rotate(-0.4deg); } }
+@keyframes ha-grass { from { transform: skewX(-7deg); } to { transform: skewX(6deg); } }
+@keyframes ha-leaf-fall {
+  0% { transform: translate(0, 0) rotate(0); opacity: 0; }
+  8%, 80% { opacity: 1; }
+  100% { transform: translate(var(--dx, 30px), 92px) rotate(320deg); opacity: 0; }
+}
+@keyframes ha-cloud { to { transform: translateX(26px); } }
+@keyframes ha-birds { from { transform: translateX(0); } to { transform: translateX(620px); } }
+@keyframes ha-rays { 0%, 100% { opacity: 0.06; } 50% { opacity: 0.17; } }
+@keyframes ha-wave { to { transform: translateX(-250px); } }
+@keyframes ha-ping { from { transform: scale(1); opacity: 0.8; } to { transform: scale(3.4); opacity: 0; } }
+@keyframes ha-twinkle { 0%, 100% { opacity: 0; } 50% { opacity: 0.95; } }
+[data-paused] * { animation-play-state: paused !important; }
+
+/* Changement de page : fondu court (opacité seule, pour ne pas casser les éléments fixed/sticky) */
+.page-in { animation: page-in 0.22s ease-out; }
+@keyframes page-in { from { opacity: 0; } }
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after {

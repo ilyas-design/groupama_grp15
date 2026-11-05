@@ -1,12 +1,13 @@
-import { AnimatedRoots, Button, Eyebrow, cn } from '@/components/ui';
+import { AnimatedRoots, Button, Eyebrow, LoopVideo, cn } from '@/components/ui';
 import { finalSection } from '@/content/home';
 import { finalCta } from '@/content/site';
 
-/** CTA final : slogan secondaire sur dégradé signature. */
+/** CTA final : slogan secondaire sur dégradé signature, eau qui coule en texture. */
 export function FinalCta() {
   return (
     <section aria-labelledby="final-titre" className="px-4 pb-16 sm:px-6 lg:px-12 lg:pb-[72px]">
       <div className="relative mx-auto flex max-w-[1184px] flex-col items-start justify-between gap-8 overflow-hidden rounded-[32px] bg-signature px-6 py-12 text-white sm:px-10 sm:py-16 lg:flex-row lg:items-center lg:px-14 lg:py-[72px]">
+        <LoopVideo src="/videos/eau-cta.mp4" poster="/videos/eau-cta.webp" className="absolute inset-0 h-full w-full opacity-60 mix-blend-soft-light" />
         {/* Voile sombre : garantit le contraste AA du texte blanc sur la partie verte claire du dégradé */}
         <span aria-hidden className="absolute inset-0 bg-green-900/30" />
         <AnimatedRoots className="pointer-events-none absolute -bottom-6 right-0 w-[420px] max-w-full opacity-20" color="#fff" />
